@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:text="@string/createReminder"
+            android:id="@+id/btnCreate"
+            android:layout_weight="1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:text="List\nReminders"
+            android:id="@+id/btnList"
+            android:layout_weight="1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:text="Create\nEmployee\n(File)"
+            android:layout_width="150dp"
+            android:id="@+id/btnCreate2"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:text="List\nEmployee\n(File)"
+            android:layout_width="150dp"
+            android:id="@+id/btnList2"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal" />
+
+    </GridLayout>
+
+</FrameLayout>

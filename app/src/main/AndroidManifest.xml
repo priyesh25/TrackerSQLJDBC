@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="tracker.nus.edu.sg.track">
+
+    <!-- Internet permission, as we are accessing data from server -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CreateActivity"
+            android:label="@string/title_activity_create"
+            android:parentActivityName=".MainActivity">
+
+            <!--
+                <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"></meta-data>
+            -->
+        </activity>
+        <activity
+            android:name=".ListActivity"
+            android:label="@string/title_activity_list"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Create2Activity"
+            android:label="@string/title_activity_create2"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".GridVActivity"
+            android:label="@string/title_activity_grid"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".List2Activity"
+            android:label="@string/title_activity_list2"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ReceiverActivity"
+            android:label="@string/title_activity_receiver"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tracker.nus.edu.sg.track.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SearchViewActivity"
+            android:label="@string/title_activity_search_view"
+            android:parentActivityName=".MainActivity" />
+
+        <service
+            android:name="service.DownloadService"
+            android:exported="false" />
+
+    </application>
+
+</manifest> <!-- android:theme="@style/AppTheme.NoActionBar" -->

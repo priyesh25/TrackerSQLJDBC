@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.ControlFragment">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:text="GridView\nExample"
+            android:id="@+id/btnGridV"
+            android:layout_weight="1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:text="IntentService\nExample"
+            android:id="@+id/btnCardV"
+            android:layout_weight="1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:text="SearchView\nExample"
+            android:layout_width="150dp"
+            android:id="@+id/btnSearchV"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:text="WebView\nExample"
+            android:layout_width="150dp"
+            android:id="@+id/btnWebV"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal" />
+
+    </GridLayout>
+
+</FrameLayout>
